@@ -1,0 +1,23 @@
+[0.325s] Invoking command in '/ros2_ws/build/rn1': PYTHONPATH=/ros2_ws/build/rn1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/rn1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /ros2_ws/build/rn1/build --no-deps symlink_data
+[0.408s] running develop
+[0.437s] running egg_info
+[0.437s] creating rn1.egg-info
+[0.437s] writing rn1.egg-info/PKG-INFO
+[0.437s] writing dependency_links to rn1.egg-info/dependency_links.txt
+[0.437s] writing entry points to rn1.egg-info/entry_points.txt
+[0.437s] writing requirements to rn1.egg-info/requires.txt
+[0.437s] writing top-level names to rn1.egg-info/top_level.txt
+[0.437s] writing manifest file 'rn1.egg-info/SOURCES.txt'
+[0.437s] reading manifest file 'rn1.egg-info/SOURCES.txt'
+[0.438s] writing manifest file 'rn1.egg-info/SOURCES.txt'
+[0.438s] running build_ext
+[0.438s] Creating /ros2_ws/install/rn1/lib/python3.10/site-packages/rn1.egg-link (link to .)
+[0.439s] 
+[0.439s] Installed /ros2_ws/build/rn1
+[0.439s] running symlink_data
+[0.439s] creating /ros2_ws/install/rn1/share/ament_index
+[0.439s] creating /ros2_ws/install/rn1/share/ament_index/resource_index
+[0.439s] creating /ros2_ws/install/rn1/share/ament_index/resource_index/packages
+[0.439s] symbolically linking /ros2_ws/build/rn1/resource/rn1 -> /ros2_ws/install/rn1/share/ament_index/resource_index/packages
+[0.439s] symbolically linking /ros2_ws/build/rn1/package.xml -> /ros2_ws/install/rn1/share/rn1
+[0.452s] Invoked command in '/ros2_ws/build/rn1' returned '0': PYTHONPATH=/ros2_ws/build/rn1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/rn1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /ros2_ws/build/rn1/build --no-deps symlink_data
