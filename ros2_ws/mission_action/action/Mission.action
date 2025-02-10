@@ -1,0 +1,8 @@
+# Goal
+string mission_data
+---
+# Result
+bool success
+---
+# Feedback
+string feedback

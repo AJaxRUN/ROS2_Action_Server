@@ -1,0 +1,6 @@
+Invoking command in '/ros2_ws/build/mission_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2_ws/mission_action -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/mission_action
+Invoked command in '/ros2_ws/build/mission_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2_ws/mission_action -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros2_ws/install/mission_action
+Invoking command in '/ros2_ws/build/mission_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/mission_action -- -j8 -l8
+Invoked command in '/ros2_ws/build/mission_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2_ws/build/mission_action -- -j8 -l8
+Invoking command in '/ros2_ws/build/mission_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2_ws/build/mission_action
+Invoked command in '/ros2_ws/build/mission_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2_ws/build/mission_action

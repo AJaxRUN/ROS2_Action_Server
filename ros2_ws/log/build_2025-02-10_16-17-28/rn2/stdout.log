@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing rn2.egg-info/PKG-INFO
+writing dependency_links to rn2.egg-info/dependency_links.txt
+writing entry points to rn2.egg-info/entry_points.txt
+writing requirements to rn2.egg-info/requires.txt
+writing top-level names to rn2.egg-info/top_level.txt
+reading manifest file 'rn2.egg-info/SOURCES.txt'
+writing manifest file 'rn2.egg-info/SOURCES.txt'
+running build_ext
+Creating /ros2_ws/install/rn2/lib/python3.10/site-packages/rn2.egg-link (link to .)
+Installing server_node script to /ros2_ws/install/rn2/lib/rn2
+
+Installed /ros2_ws/build/rn2
+running symlink_data

@@ -1,0 +1,107 @@
+[0.000000] (-) TimerEvent: {}
+[0.000443] (mission_action) JobQueued: {'identifier': 'mission_action', 'dependencies': OrderedDict()}
+[0.000457] (rn1) JobQueued: {'identifier': 'rn1', 'dependencies': OrderedDict()}
+[0.000464] (rn2) JobQueued: {'identifier': 'rn2', 'dependencies': OrderedDict()}
+[0.000470] (mission_action) JobStarted: {'identifier': 'mission_action'}
+[0.006666] (rn1) JobStarted: {'identifier': 'rn1'}
+[0.013662] (rn2) JobStarted: {'identifier': 'rn2'}
+[0.018729] (mission_action) JobProgress: {'identifier': 'mission_action', 'progress': 'cmake'}
+[0.019430] (mission_action) Command: {'cmd': ['/usr/bin/cmake', '/ros2_ws/mission_action', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/ros2_ws/install/mission_action'], 'cwd': '/ros2_ws/build/mission_action', 'env': OrderedDict([('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ros2_ws/build/mission_action'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100935] (-) TimerEvent: {}
+[0.201897] (-) TimerEvent: {}
+[0.303004] (-) TimerEvent: {}
+[0.303117] (mission_action) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.308866] (mission_action) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.315123] (mission_action) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.353568] (mission_action) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.357458] (mission_action) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.357753] (mission_action) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.358514] (mission_action) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.360377] (mission_action) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.398904] (mission_action) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.403188] (mission_action) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.403258] (-) TimerEvent: {}
+[0.403351] (mission_action) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.403599] (mission_action) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.406845] (mission_action) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.472015] (rn1) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/ros2_ws/build/rn1/build', '--no-deps', 'symlink_data'], 'cwd': '/ros2_ws/build/rn1', 'env': {'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/ros2_ws/build/rn1', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ros2_ws/build/rn1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/rn1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.472932] (rn2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/ros2_ws/build/rn2/build', '--no-deps', 'symlink_data'], 'cwd': '/ros2_ws/build/rn2', 'env': {'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/ros2_ws/build/rn2', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ros2_ws/build/rn2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/rn2/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.473585] (mission_action) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.505305] (-) TimerEvent: {}
+[0.506861] (mission_action) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.522322] (mission_action) StdoutLine: {'line': b'-- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[0.543459] (mission_action) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.546410] (mission_action) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.551303] (mission_action) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.558075] (rn2) StdoutLine: {'line': b'running develop\n'}
+[0.560204] (mission_action) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.560694] (rn1) StdoutLine: {'line': b'running develop\n'}
+[0.569153] (mission_action) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.589145] (rn2) StdoutLine: {'line': b'running egg_info\n'}
+[0.592874] (rn1) StdoutLine: {'line': b'running egg_info\n'}
+[0.593082] (rn2) StdoutLine: {'line': b'writing rn2.egg-info/PKG-INFO\n'}
+[0.593329] (mission_action) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.593977] (rn1) StdoutLine: {'line': b'writing rn1.egg-info/PKG-INFO\n'}
+[0.594298] (rn2) StdoutLine: {'line': b'writing dependency_links to rn2.egg-info/dependency_links.txt\n'}
+[0.594622] (rn1) StdoutLine: {'line': b'writing dependency_links to rn1.egg-info/dependency_links.txt\n'}
+[0.594915] (rn2) StdoutLine: {'line': b'writing entry points to rn2.egg-info/entry_points.txt\n'}
+[0.595236] (rn1) StdoutLine: {'line': b'writing entry points to rn1.egg-info/entry_points.txt\n'}
+[0.595516] (rn2) StdoutLine: {'line': b'writing requirements to rn2.egg-info/requires.txt\n'}
+[0.595850] (rn1) StdoutLine: {'line': b'writing requirements to rn1.egg-info/requires.txt\n'}
+[0.596223] (rn2) StdoutLine: {'line': b'writing top-level names to rn2.egg-info/top_level.txt\n'}
+[0.596773] (rn1) StdoutLine: {'line': b'writing top-level names to rn1.egg-info/top_level.txt\n'}
+[0.597729] (rn2) StdoutLine: {'line': b"reading manifest file 'rn2.egg-info/SOURCES.txt'\n"}
+[0.598048] (rn1) StdoutLine: {'line': b"reading manifest file 'rn1.egg-info/SOURCES.txt'\n"}
+[0.598138] (rn2) StdoutLine: {'line': b"writing manifest file 'rn2.egg-info/SOURCES.txt'\n"}
+[0.598427] (rn1) StdoutLine: {'line': b"writing manifest file 'rn1.egg-info/SOURCES.txt'\n"}
+[0.599121] (rn2) StdoutLine: {'line': b'running build_ext\n'}
+[0.599233] (rn2) StdoutLine: {'line': b'Creating /ros2_ws/install/rn2/lib/python3.10/site-packages/rn2.egg-link (link to .)\n'}
+[0.599512] (rn1) StdoutLine: {'line': b'running build_ext\n'}
+[0.599610] (rn1) StdoutLine: {'line': b'Creating /ros2_ws/install/rn1/lib/python3.10/site-packages/rn1.egg-link (link to .)\n'}
+[0.601975] (rn2) StdoutLine: {'line': b'Installing server_node script to /ros2_ws/install/rn2/lib/rn2\n'}
+[0.602130] (rn2) StdoutLine: {'line': b'\n'}
+[0.602173] (rn2) StdoutLine: {'line': b'Installed /ros2_ws/build/rn2\n'}
+[0.602198] (rn2) StdoutLine: {'line': b'running symlink_data\n'}
+[0.603627] (rn1) StdoutLine: {'line': b'Installing client_node script to /ros2_ws/install/rn1/lib/rn1\n'}
+[0.603809] (rn1) StdoutLine: {'line': b'\n'}
+[0.603850] (rn1) StdoutLine: {'line': b'Installed /ros2_ws/build/rn1\n'}
+[0.603874] (rn1) StdoutLine: {'line': b'running symlink_data\n'}
+[0.604029] (mission_action) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.606268] (-) TimerEvent: {}
+[0.610496] (mission_action) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.616235] (rn2) CommandEnded: {'returncode': 0}
+[0.629921] (rn2) JobEnded: {'identifier': 'rn2', 'rc': 0}
+[0.631119] (rn1) CommandEnded: {'returncode': 0}
+[0.641216] (rn1) JobEnded: {'identifier': 'rn1', 'rc': 0}
+[0.653510] (mission_action) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.654041] (mission_action) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.654814] (mission_action) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.657079] (mission_action) StdoutLine: {'line': b'-- Generating done\n'}
+[0.657985] (mission_action) StdoutLine: {'line': b'-- Build files have been written to: /ros2_ws/build/mission_action\n'}
+[0.660115] (mission_action) CommandEnded: {'returncode': 0}
+[0.660355] (mission_action) JobProgress: {'identifier': 'mission_action', 'progress': 'build'}
+[0.660987] (mission_action) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros2_ws/build/mission_action', '--', '-j8', '-l8'], 'cwd': '/ros2_ws/build/mission_action', 'env': OrderedDict([('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ros2_ws/build/mission_action'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.678654] (mission_action) CommandEnded: {'returncode': 0}
+[0.679073] (mission_action) JobProgress: {'identifier': 'mission_action', 'progress': 'install'}
+[0.683577] (mission_action) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros2_ws/build/mission_action'], 'cwd': '/ros2_ws/build/mission_action', 'env': OrderedDict([('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/ros2_ws/build/mission_action'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.686053] (mission_action) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.686292] (mission_action) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.686578] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/ament_index/resource_index/package_run_dependencies/mission_action\n'}
+[0.690259] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/ament_index/resource_index/parent_prefix_path/mission_action\n'}
+[0.693155] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/environment/ament_prefix_path.sh\n'}
+[0.695969] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/environment/ament_prefix_path.dsv\n'}
+[0.698815] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/environment/path.sh\n'}
+[0.701542] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/environment/path.dsv\n'}
+[0.704304] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/local_setup.bash\n'}
+[0.707060] (-) TimerEvent: {}
+[0.707276] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/local_setup.sh\n'}
+[0.709963] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/local_setup.zsh\n'}
+[0.712653] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/local_setup.dsv\n'}
+[0.715291] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/package.dsv\n'}
+[0.717921] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/ament_index/resource_index/packages/mission_action\n'}
+[0.720606] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/cmake/mission_actionConfig.cmake\n'}
+[0.723258] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/cmake/mission_actionConfig-version.cmake\n'}
+[0.726064] (mission_action) StdoutLine: {'line': b'-- Symlinking: /ros2_ws/install/mission_action/share/mission_action/package.xml\n'}
+[0.729452] (mission_action) CommandEnded: {'returncode': 0}
+[0.733625] (mission_action) JobEnded: {'identifier': 'mission_action', 'rc': 0}
+[0.734248] (-) EventReactorShutdown: {}

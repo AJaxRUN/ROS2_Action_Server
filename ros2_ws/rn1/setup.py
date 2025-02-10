@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "client_node = rn1.client:main"
+            "mission_client = rn1.client:main"
         ],
     },
 )

@@ -3,6 +3,7 @@ setup.cfg
 setup.py
 resource/rn2
 rn2/__init__.py
+rn2/server.py
 rn2.egg-info/PKG-INFO
 rn2.egg-info/SOURCES.txt
 rn2.egg-info/dependency_links.txt

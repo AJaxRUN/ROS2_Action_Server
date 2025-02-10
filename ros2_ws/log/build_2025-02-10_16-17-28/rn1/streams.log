@@ -1,0 +1,17 @@
+[0.466s] Invoking command in '/ros2_ws/build/rn1': PYTHONPATH=/ros2_ws/build/rn1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/rn1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /ros2_ws/build/rn1/build --no-deps symlink_data
+[0.554s] running develop
+[0.586s] running egg_info
+[0.587s] writing rn1.egg-info/PKG-INFO
+[0.588s] writing dependency_links to rn1.egg-info/dependency_links.txt
+[0.589s] writing entry points to rn1.egg-info/entry_points.txt
+[0.589s] writing requirements to rn1.egg-info/requires.txt
+[0.590s] writing top-level names to rn1.egg-info/top_level.txt
+[0.591s] reading manifest file 'rn1.egg-info/SOURCES.txt'
+[0.592s] writing manifest file 'rn1.egg-info/SOURCES.txt'
+[0.593s] running build_ext
+[0.593s] Creating /ros2_ws/install/rn1/lib/python3.10/site-packages/rn1.egg-link (link to .)
+[0.597s] Installing client_node script to /ros2_ws/install/rn1/lib/rn1
+[0.597s] 
+[0.597s] Installed /ros2_ws/build/rn1
+[0.597s] running symlink_data
+[0.625s] Invoked command in '/ros2_ws/build/rn1' returned '0': PYTHONPATH=/ros2_ws/build/rn1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/rn1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /ros2_ws/build/rn1/build --no-deps symlink_data

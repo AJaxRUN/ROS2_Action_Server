@@ -1,36 +1,50 @@
 #!/userbin/env python3
 import rclpy
-from rclpy.executors import ExternalShutdownException
+import requests
 from rclpy.node import Node
+from rclpy.action import ActionClient
+from mission_action.action import Mission
 
-class Talker(Node):
+API_URL = "http://0.0.0.0:8080/mission"
+class MissionClient(Node):
 
     def __init__(self):
-        super().__init__('talker')
-        self.get_logger().info("Hiii from Aj")
-    #     self.i = 0
-    #     self.pub = self.create_publisher(String, 'chatter', 10)
-    #     timer_period = 1.0
-    #     self.tmr = self.create_timer(timer_period, self.timer_callback)
+        super().__init__('mission_client')
+        self.client = ActionClient(self, Mission, "mission_action")
+        self.timer = self.create_timer(1.0, self.fetch_and_send_mission)
 
-    # def timer_callback(self):
-    #     msg = String()
-    #     msg.data = 'Hello World: {0}'.format(self.i)
-    #     self.i += 1
-    #     self.get_logger().info('Publishing: "{0}"'.format(msg.data))
-    #     self.pub.publish(msg)
+    def fetch_and_send_mission(self):
+        response = requests.get(API_URL).json()
+        mission = response.get("mission", {})
+        if mission:
+            goal = Mission.Goal()
+            goal.mission_data = str(mission)
+            self.send_goal(goal)
 
+    def send_goal(self, goal):
+        self.client.wait_for_server()
+        future = self.client.send_goal_async(goal)
+        future.add_done_callback(self.goal_response_callback)
+
+    def goal_response_callback(self, future):
+        goal_handle = future.result()
+        if not goal_handle.accepted:
+            self.get_logger().info("Mission rejected")
+            return
+        self.get_logger().info("Mission accepted")
+        result_future = goal_handle.get_result_async()
+        result_future.add_done_callback(self.get_result_callback)
+
+    def get_result_callback(self, future):
+        result = future.result().result
+        self.get_logger().info(f"Mission Result: {result.success}")
 
 def main(args=None):
-    try:
-        rclpy.init(args=args)
-        node = Talker()
-        rclpy.spin(node)
-        rclpy.shutdown()
-        
-    except (KeyboardInterrupt, ExternalShutdownException):
-        pass
-
+    rclpy.init(args=args)
+    node = MissionClient()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
