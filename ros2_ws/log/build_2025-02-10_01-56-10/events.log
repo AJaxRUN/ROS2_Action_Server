@@ -1,0 +1,58 @@
+[0.000000] (-) TimerEvent: {}
+[0.000433] (rn1) JobQueued: {'identifier': 'rn1', 'dependencies': OrderedDict()}
+[0.000450] (rn2) JobQueued: {'identifier': 'rn2', 'dependencies': OrderedDict()}
+[0.000458] (rn1) JobStarted: {'identifier': 'rn1'}
+[0.006993] (rn2) JobStarted: {'identifier': 'rn2'}
+[0.100770] (-) TimerEvent: {}
+[0.202042] (-) TimerEvent: {}
+[0.302800] (-) TimerEvent: {}
+[0.323990] (rn2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/ros2_ws/build/rn2/build', '--no-deps', 'symlink_data'], 'cwd': '/ros2_ws/build/rn2', 'env': {'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/ros2_ws/build/rn2', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ros2_ws/build/rn2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/rn2/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.325039] (rn1) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/ros2_ws/build/rn1/build', '--no-deps', 'symlink_data'], 'cwd': '/ros2_ws/build/rn1', 'env': {'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/ros2_ws/build/rn1', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/ros2_ws/build/rn1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/install/rn1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.403511] (-) TimerEvent: {}
+[0.407702] (rn2) StdoutLine: {'line': b'running develop\n'}
+[0.408202] (rn1) StdoutLine: {'line': b'running develop\n'}
+[0.436487] (rn2) StdoutLine: {'line': b'running egg_info\n'}
+[0.436532] (rn2) StdoutLine: {'line': b'creating rn2.egg-info\n'}
+[0.436661] (rn2) StdoutLine: {'line': b'writing rn2.egg-info/PKG-INFO\n'}
+[0.436836] (rn2) StdoutLine: {'line': b'writing dependency_links to rn2.egg-info/dependency_links.txt\n'}
+[0.436881] (rn2) StdoutLine: {'line': b'writing entry points to rn2.egg-info/entry_points.txt\n'}
+[0.436956] (rn1) StdoutLine: {'line': b'running egg_info\n'}
+[0.437040] (rn1) StdoutLine: {'line': b'creating rn1.egg-info\n'}
+[0.437066] (rn2) StdoutLine: {'line': b'writing requirements to rn2.egg-info/requires.txt\n'}
+[0.437091] (rn2) StdoutLine: {'line': b'writing top-level names to rn2.egg-info/top_level.txt\n'}
+[0.437170] (rn2) StdoutLine: {'line': b"writing manifest file 'rn2.egg-info/SOURCES.txt'\n"}
+[0.437196] (rn1) StdoutLine: {'line': b'writing rn1.egg-info/PKG-INFO\n'}
+[0.437217] (rn1) StdoutLine: {'line': b'writing dependency_links to rn1.egg-info/dependency_links.txt\n'}
+[0.437238] (rn1) StdoutLine: {'line': b'writing entry points to rn1.egg-info/entry_points.txt\n'}
+[0.437271] (rn1) StdoutLine: {'line': b'writing requirements to rn1.egg-info/requires.txt\n'}
+[0.437292] (rn1) StdoutLine: {'line': b'writing top-level names to rn1.egg-info/top_level.txt\n'}
+[0.437313] (rn1) StdoutLine: {'line': b"writing manifest file 'rn1.egg-info/SOURCES.txt'\n"}
+[0.437513] (rn2) StdoutLine: {'line': b"reading manifest file 'rn2.egg-info/SOURCES.txt'\n"}
+[0.437744] (rn2) StdoutLine: {'line': b"writing manifest file 'rn2.egg-info/SOURCES.txt'\n"}
+[0.437773] (rn1) StdoutLine: {'line': b"reading manifest file 'rn1.egg-info/SOURCES.txt'\n"}
+[0.438003] (rn1) StdoutLine: {'line': b"writing manifest file 'rn1.egg-info/SOURCES.txt'\n"}
+[0.438288] (rn2) StdoutLine: {'line': b'running build_ext\n'}
+[0.438422] (rn2) StdoutLine: {'line': b'Creating /ros2_ws/install/rn2/lib/python3.10/site-packages/rn2.egg-link (link to .)\n'}
+[0.438492] (rn1) StdoutLine: {'line': b'running build_ext\n'}
+[0.438675] (rn1) StdoutLine: {'line': b'Creating /ros2_ws/install/rn1/lib/python3.10/site-packages/rn1.egg-link (link to .)\n'}
+[0.438780] (rn2) StdoutLine: {'line': b'\n'}
+[0.438856] (rn2) StdoutLine: {'line': b'Installed /ros2_ws/build/rn2\n'}
+[0.438884] (rn2) StdoutLine: {'line': b'running symlink_data\n'}
+[0.438909] (rn2) StdoutLine: {'line': b'creating /ros2_ws/install/rn2/share/ament_index\n'}
+[0.438933] (rn2) StdoutLine: {'line': b'creating /ros2_ws/install/rn2/share/ament_index/resource_index\n'}
+[0.439032] (rn1) StdoutLine: {'line': b'\n'}
+[0.439066] (rn1) StdoutLine: {'line': b'Installed /ros2_ws/build/rn1\n'}
+[0.439092] (rn1) StdoutLine: {'line': b'running symlink_data\n'}
+[0.439120] (rn1) StdoutLine: {'line': b'creating /ros2_ws/install/rn1/share/ament_index\n'}
+[0.439147] (rn1) StdoutLine: {'line': b'creating /ros2_ws/install/rn1/share/ament_index/resource_index\n'}
+[0.439173] (rn2) StdoutLine: {'line': b'creating /ros2_ws/install/rn2/share/ament_index/resource_index/packages\n'}
+[0.439205] (rn2) StdoutLine: {'line': b'symbolically linking /ros2_ws/build/rn2/resource/rn2 -> /ros2_ws/install/rn2/share/ament_index/resource_index/packages\n'}
+[0.439236] (rn2) StdoutLine: {'line': b'symbolically linking /ros2_ws/build/rn2/package.xml -> /ros2_ws/install/rn2/share/rn2\n'}
+[0.439332] (rn1) StdoutLine: {'line': b'creating /ros2_ws/install/rn1/share/ament_index/resource_index/packages\n'}
+[0.439361] (rn1) StdoutLine: {'line': b'symbolically linking /ros2_ws/build/rn1/resource/rn1 -> /ros2_ws/install/rn1/share/ament_index/resource_index/packages\n'}
+[0.439382] (rn1) StdoutLine: {'line': b'symbolically linking /ros2_ws/build/rn1/package.xml -> /ros2_ws/install/rn1/share/rn1\n'}
+[0.452476] (rn1) CommandEnded: {'returncode': 0}
+[0.460130] (rn1) JobEnded: {'identifier': 'rn1', 'rc': 0}
+[0.460418] (rn2) CommandEnded: {'returncode': 0}
+[0.463145] (rn2) JobEnded: {'identifier': 'rn2', 'rc': 0}
+[0.463415] (-) EventReactorShutdown: {}
