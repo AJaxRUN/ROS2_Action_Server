@@ -10,13 +10,12 @@ RUN apt-get update && apt-get install -y \
     ros-humble-action-msgs \
     && rm -rf /var/lib/apt/lists/* 
 
-COPY requirements.txt /ros2_ws/
+COPY ./ros2_ws /ros2_ws
 
 RUN sed -i '/rclpy/d' requirements.txt && pip3 install --no-cache-dir -r requirements.txt
 
 RUN . /opt/ros/humble/setup.sh
 
-COPY ./ros2_ws /ros2_ws
 
 RUN /bin/bash -c "source /opt/ros/humble/setup.bash && colcon build --symlink-install"
 
