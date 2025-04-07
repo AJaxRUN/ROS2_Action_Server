@@ -1,4 +1,4 @@
-# FleetGlue Take Home Assessment
+# ROS2 Action Hooks
 ## Details:
 1. Create a python REST API
     - one POST mission endpoint which accepts json
@@ -10,10 +10,6 @@
 3. Create ROS2 python node 2 (RN2)
     - Hosts an Action Server
     - Execute callback simply prints the ROS action
-4. Bonus points for
-    - MQTT API
-    - Custom ROS messages
-    - Deployment instructions + Kubernetes / Docker / Poetry / AWS CloudFormation
 
 ## Implementation:
 Using ROS2 Humble as base image the expected functionality resides in a docker container. I have implemented an in memory queue instead of MQTT, given its a simple functionality. All that needs to be done to run the container are build and deploy: 
